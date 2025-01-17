@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Join our E-Learning platform and improve your skills with online courses.">
     <meta name="author" content="E-Learning Platform">
     
@@ -20,16 +19,7 @@
     <meta name="twitter:description" content="Join thousands of students learning new skills with our online courses." />
     <meta name="twitter:image" content="https://www.elearning.com/twitter-image.jpg" />
     <meta name="twitter:url" content="https://www.elearning.com" />
-    
-    <title>E-Learning Platform</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome for Social Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-   <!-- --------------------------------------------------------------------------------- -->
-
+    <!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
      rel="stylesheet" 
      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
@@ -37,59 +27,113 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
      crossorigin="anonymous"></script>
+
+     <!-- link icon cdn -->
+     <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+      <!-- link css -->
+     <link rel="stylesheet" href="./style.css">
     <title>E-Learning</title>
 </head>
 <body>
-      <!--  Header -->
+     
       <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between py-4 mb-4 border-bottom"  style="background-color: rgba(130, 130, 231, 0.622);">
         <div class="col-lg-3 mb-2 mb-lg-0">
           <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
             <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
           </a>
         </div>
-  
         <ul class="nav col-12 col-lg-auto mb-3 justify-content-center mb-lg-0">
           <li><a href="./index.html" class="nav-link px-2 link-secondary">Home</a></li>
           <li><a href="./course.html" class="nav-link px-2">Course</a></li>
           <li><a href="./about.html" class="nav-link px-2">About Us</a></li>
           <li><a href="./contact.html" class="nav-link px-2">Contact</a></li>
-        
         </ul>
-  
         <div class="col-md-3 text-end">
           <button type="button" class="btn btn-outline-primary me-2">Register</button>
-         
         </div>
       </header>
 
      <main>
-        <!-- Contact Form Section -->
-<div class="container my-5">
+        <!--  Section 1-->
+<section class="my-5">
+  <div class="container">
+    <h4 class="text-center mb-4"  style="color:blue">Meet Our Team</h4>
+    <div class="row g-4 text-center">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./image/instructor2.png" class="card-img-top" alt="Team Member 1">
+          <div class="card-body">
+            <h5 class="card-title">John Doe</h5>
+            <p class="card-text">CEO & Founder</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./image/instructor5.png" class="card-img-top" alt="Team Member 2">
+          <div class="card-body">
+            <h5 class="card-title">Jane Smith</h5>
+            <p class="card-text">Marketing Manager</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./image/instructor7.png" class="card-img-top" alt="Team Member 3">
+          <div class="card-body">
+            <h5 class="card-title">Alex Johnson</h5>
+            <p class="card-text">Lead Instructor</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./image/instructore1.png" class="card-img-top" alt="Team Member 4">
+          <div class="card-body">
+            <h5 class="card-title">Sara Lee</h5>
+            <p class="card-text">Customer Support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section 2 -->
+ <section>
+  <div class="container my-5">
     <div class="row g-5">
-      
-      <!-- Contact Form -->
       <div class="col-lg-6">
-        <h4 class="mb-4" >Send Us a Message</h4>
+        <h4 class="mb-4"  style="color:blue" >Send Us a Message</h4>
         <form action="#" method="post">
           <div class="form-floating mb-3">
             <input type="text" id="name" class="form-control" placeholder="Full Name" required>
             <label for="name">Full Name</label>
           </div>
+
           <div class="form-floating mb-3">
             <input type="email" id="email" class="form-control" placeholder="Email Address" required>
             <label for="email">Email Address</label>
           </div>
+
           <div class="form-floating mb-3">
             <textarea id="message" class="form-control" placeholder="Type your message here..." style="height: 150px;" required></textarea>
             <label for="message">Message</label>
           </div>
+
           <button type="submit" class="btn btn-primary w-100"  style="background-color: rgba(115, 115, 237, 0.622);">Send Message</button>
         </form>
       </div>
-  
-      <!-- Contact Information -->
+
       <div class="col-lg-6">
-        <h4 class="mb-4" >Contact Information</h4>
+        <h4 class="mb-4"  style="color:blue">Contact Information</h4>
         <p><i class="fas fa-map-marker-alt me-2" ></i> 123 E-Learning Street, Phnom Penh, Cambodia</p>
         <p><i class="fas fa-envelope me-2"></i> support@elearning.com</p>
         <p><i class="fas fa-phone me-2"></i> +855 12 345 678</p>
@@ -102,15 +146,92 @@
   <a href="https://www.instagram.com" class="text-primary me-4" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
   <a href="https://www.linkedin.com" class="text-primary" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
 </div>
-
       </div>
-  
     </div>
   </div>
-  
+</section> 
+
+<!--  section 3 -->
+    
+<section class="my-5 py-5" style="background-color: rgba(115, 115, 237, 0.1);">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h4 class="mb-3" style="color:blue">Stay Updated</h4>
+        <p>Subscribe to our newsletter to get the latest updates on courses, promotions, and events.</p>
+      </div>
+      <div class="col-lg-6">
+        <form action="#" method="post" class="d-flex">
+          <input type="email" class="form-control me-2" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Section 4 -->
+<section class="my-5">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Map -->
+      <div class="col-lg-6">
+        <h4 class="mb-4">Our Location</h4>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345086167!2d144.9559253153182!3d-37.81720997975133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577ef3e3fd17f2e!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1635240388055!5m2!1sen!2sau" 
+          width="100%" height="300" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <!-- FAQs -->
+      <div class="col-lg-6">
+        <h4 class="mb-4">Frequently Asked Questions</h4>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                How can I contact support?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                You can contact our support team via email at support@elearning.com or by calling +855 12 345 678.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                What are your working hours?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Our working hours are Monday to Friday, 9:00 AM to 5:00 PM.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Where is your office located?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Our office is located at 123 E-Learning Street, Phnom Penh, Cambodia.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
      </main>
 
-    <!-- Footer -->
+    
      <footer class=" text-white py-4 " style="background-color: rgba(130, 130, 231, 0.622);">
       <div class="container">
         <div class="row">
